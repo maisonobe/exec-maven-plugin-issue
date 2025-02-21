@@ -1,7 +1,7 @@
 This project is a minimal reproducer for [issue 327](https://github.com/mojohaus/exec-maven-plugin/issues/327) with exec-maven-plugin.
 
 The issue is a ClassNotFoundException that is triggered as some class
-seem to be loaded dynamically when the looging is shut down.
+seem to be loaded dynamically when the logging is shut down.
 
 Here are the output of four different runs. The first one, with exec-maven-plugin
 and logging shutdown enabled triggers the exception. The second one with
