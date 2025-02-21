@@ -1,6 +1,6 @@
 This project is a minimal reproducer for an issue with exec-maven-plugin.
 
-The issue is a ClassNotFoundException that is triggered as some class that
+The issue is a ClassNotFoundException that is triggered as some class
 seem to be loaded dynamically when the looging is shut down.
 
 Here are the output of four different runs. The first one, with exec-maven-plugin
@@ -10,7 +10,7 @@ The third one, using directly java and logging shutdown enabled runs without any
 problem. The fourth one using directly java and logging shutdown disabled runs without
 any problem.
 
-Tyring to set "<classpathScope>compile</classpathScope>" as suggested by someone does
+Tyring to set classpathScope to "compile" as suggested by someone does
 not change anything.
 
 First run, triggering an exception:
